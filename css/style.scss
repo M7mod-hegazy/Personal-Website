@@ -1052,6 +1052,8 @@ div#accordionExample {
 .contact .contact-content .row i{
     font-size: 25px;
     color: $first-color;
+    position: relative;
+    top: 26px;
 }
 .contact .contact-content .info .head{
     font-weight: 500;

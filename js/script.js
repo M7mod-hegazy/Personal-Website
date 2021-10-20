@@ -132,21 +132,79 @@ gsap.from(".media-icons span", {
 });
 // modal shrink start
 
-const modalHeader = document.querySelector(".modal-header");
-const shrinkBtn = document.querySelector(".modal-shrink-btn");
-const shrinkBtnPlus = document.querySelector(".modal-shrink-btn i");
+const modals = Array.from(document.querySelectorAll(".modal-shrink-btn"));
 
-shrinkBtn.addEventListener("click", () =>{
-  modalHeader.classList.toggle("show-header")
-  if(modalHeader.classList.contains("show-header")){
-    shrinkBtnPlus.classList.remove("fa-plus")
-    shrinkBtnPlus.classList.add("fa-minus")
+
+// const modalHeader =  document.querySelector(".modal-header");
+// const shrinkBtn = document.querySelector(".modal-shrink-btn");
+// const shrinkBtnPlus = document.querySelector(".modal-shrink-btn i");
+
+const modalB1 = document.getElementById("modalB1");
+const modalH1 = document.getElementById("modalH1");
+const modalI1 = document.getElementById("modalI1");
+
+const modalB2 = document.getElementById("modalB2");
+const modalH2 = document.getElementById("modalH2");
+const modalI2 = document.getElementById("modalI2");
+
+const modalB3 = document.getElementById("modalB3");
+const modalH3 = document.getElementById("modalH3");
+const modalI3 = document.getElementById("modalI3");
+
+const modalB4 = document.getElementById("modalB4");
+const modalH4 = document.getElementById("modalH4");
+const modalI4 = document.getElementById("modalI4");
+
+
+modalB4.addEventListener("click", () =>{
+  modalH4.classList.toggle("show-header")
+  if(modalH4.classList.contains("show-header")){
+    modalI4.classList.remove("fa-plus")
+    modalI4.classList.add("fa-minus")
   }else{
-    shrinkBtnPlus.classList.add("fa-plus")
-    shrinkBtnPlus.classList.remove("fa-minus")
+    modalI4.classList.add("fa-plus")
+    modalI4.classList.remove("fa-minus")
 
   }
 });
+
+modalB3.addEventListener("click", () =>{
+  modalH3.classList.toggle("show-header")
+  if(modalH3.classList.contains("show-header")){
+    modalI3.classList.remove("fa-plus")
+    modalI3.classList.add("fa-minus")
+  }else{
+    modalI3.classList.add("fa-plus")
+    modalI3.classList.remove("fa-minus")
+
+  }
+});
+
+modalB2.addEventListener("click", () =>{
+  modalH2.classList.toggle("show-header")
+  if(modalH2.classList.contains("show-header")){
+    modalI2.classList.remove("fa-plus")
+    modalI2.classList.add("fa-minus")
+  }else{
+    modalI2.classList.add("fa-plus")
+    modalI2.classList.remove("fa-minus")
+
+  }
+});
+modalB1.addEventListener("click", () =>{
+  modalH1.classList.toggle("show-header")
+  if(modalH1.classList.contains("show-header")){
+    modalI1.classList.remove("fa-plus")
+    modalI1.classList.add("fa-minus")
+  }else{
+    modalI1.classList.add("fa-plus")
+    modalI1.classList.remove("fa-minus")
+
+  }
+});
+
+
+
 
 
 
