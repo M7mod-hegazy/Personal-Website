@@ -1126,6 +1126,7 @@ footer{
     padding: 15px 23px;
     color: $second-color;
     text-align: center;
+    align-items: center;
 }
 footer span a{
     color: $first-color;
@@ -1174,6 +1175,7 @@ footer span a:hover{
     }
     .navbar .menu.active{
         left: 0;
+        padding-right: 30px;
     }
     .navbar .menu li{
         display: block;
@@ -1215,6 +1217,10 @@ footer span a:hover{
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+    span.rights.col-12.col-md-6 {
+        font-size: 12px;
+        margin-bottom: 15px;
     }
 }
 
@@ -1280,4 +1286,18 @@ footer span a:hover{
 .navbar.sticky .Now::after {
     background: $second-color;
 
+}
+img.identity {
+    height: 67px;
+    width: 280px;
+    margin: auto;
+}
+.row.end {
+    align-items: center;
+    width: 100%;
+}
+@media (min-width: 1200px) {
+.footer {
+    max-width: none;
+}
 }
