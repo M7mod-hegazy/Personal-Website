@@ -155,6 +155,37 @@ const modalB4 = document.getElementById("modalB4");
 const modalH4 = document.getElementById("modalH4");
 const modalI4 = document.getElementById("modalI4");
 
+const modalB5 = document.getElementById("modalB5");
+const modalH5 = document.getElementById("modalH5");
+const modalI5 = document.getElementById("modalI5");
+
+const modalB6 = document.getElementById("modalB6");
+const modalH6 = document.getElementById("modalH6");
+const modalI6 = document.getElementById("modalI6");
+
+modalB6.addEventListener("click", () =>{
+  modalH6.classList.toggle("show-header")
+  if(modalH6.classList.contains("show-header")){
+    modalI6.classList.remove("fa-plus")
+    modalI6.classList.add("fa-minus")
+  }else{
+    modalI6.classList.add("fa-plus")
+    modalI6.classList.remove("fa-minus")
+
+  }
+});
+
+modalB5.addEventListener("click", () =>{
+  modalH5.classList.toggle("show-header")
+  if(modalH5.classList.contains("show-header")){
+    modalI5.classList.remove("fa-plus")
+    modalI5.classList.add("fa-minus")
+  }else{
+    modalI5.classList.add("fa-plus")
+    modalI5.classList.remove("fa-minus")
+
+  }
+});
 
 modalB4.addEventListener("click", () =>{
   modalH4.classList.toggle("show-header")

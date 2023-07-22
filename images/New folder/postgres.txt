@@ -1,0 +1,38 @@
+Dataase:(PGadmin)
+password => 275757
+port => 5432
+
+
+superuser:
+name=>m7mod
+password=>275757
+
+
+Herocu:
+email=> medo.hagaze33@gmailcom
+passwod=> Mo@2351970321
+
+https://myfristtrailapp.herokuapp.com/ | https://git.heroku.com/myfristtrailapp.git
+
+https://elhegazyshop.herokuapp.com/ | https://git.heroku.com/elhegazyshop.git
+
+https://elhegazy.herokuapp.com/ | https://git.heroku.com/elhegazy.git
+
+to make test =>> 
+python manage.py collectstatic
+python manage.py test
+
+
+localhost
+5432
+postgres
+
+
+'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'elhegazedb',
+        'USER': 'xfgrzodtqjwfkq',
+        'PASSWORD': '6919fc6346fa036c1622432a1e28801fb854ed5fbc63a7186956cece1d7bb819',
+        'HOST': 'ec2-100-24-139-146.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }

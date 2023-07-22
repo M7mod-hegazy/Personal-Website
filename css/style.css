@@ -92,7 +92,7 @@ section .title::after {
   position: absolute;
   bottom: -8px;
   left: 50%;
-  font-size: 20px;
+  font-size: 15px;
   color: crimson;
   padding: 0 5px;
   background: white;
@@ -214,11 +214,11 @@ nav.navbar {
     width: 13rem;
     right: 7%;
   }
-  #home {
-    height: 110vh !important;
-  }
   .home-content {
     margin-top: -160px;
+  }
+  #home {
+    padding-top: 35%;
   }
 }
 
@@ -332,7 +332,6 @@ nav.navbar {
   background: url("../images/5.jpg") no-repeat center;
   height: 100vh;
   color: white;
-  min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
@@ -1396,7 +1395,7 @@ footer span a:hover {
 
 @media (max-width: 991px) {
   .max-width {
-    padding: 0 50px;
+    padding: 0 35px;
   }
 }
 
@@ -1566,5 +1565,15 @@ img.identity {
   .footer {
     max-width: none;
   }
+}
+
+@media (max-width: 576px) {
+  .modal-dialog {
+    max-width: 95%;
+  }
+}
+
+footer.container.footer {
+  width: 100% !important;
 }
 /*# sourceMappingURL=style.css.map */

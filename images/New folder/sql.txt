@@ -1,0 +1,4 @@
+sql 
+login command: mysql -u m7mod -p
+user:  m7mod 
+pass: 275757
