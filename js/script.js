@@ -236,9 +236,63 @@ modalB1.addEventListener("click", () =>{
 
 
 
-
-
-
 // modal shrink end
 // init aos
 AOS.init()
+
+//secnding email
+
+
+function sendEmail(event) {
+  event.preventDefault();
+
+  // Initialize EmailJS with your service ID
+  emailjs.init("S2-pLts4iYFCBsY1d");
+
+  // Prepare the email parameters
+  var templateParams = {
+      to_email: "medo.hagaze@gmail.com", // Replace with the recipient email address
+      from_name: document.getElementById("name").value,
+      from_email: document.getElementById("email").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value
+  };
+
+  // Send the email
+  emailjs.send("service_1rz7r5a", "template_748i9li", templateParams)
+  .then(function(response) {
+    console.log("Email sent successfully!", response);
+
+    // Show success popup
+    Swal.fire({
+      icon: 'success',
+      title: 'Success!',
+      text: 'Message sent successfully. Thank you for contacting me.'
+  }).then((result) => {
+      // Clear form inputs on popup close
+      if (result.isConfirmed || result.isDismissed) {
+          document.getElementById("name").value = '';
+          document.getElementById("email").value = '';
+          document.getElementById("subject").value = '';
+          document.getElementById("message").value = '';
+      }
+  });
+})
+.catch(function(error) {
+    console.error("Error sending email:", error);
+
+    // Show error popup
+    Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: 'Oops! Something went wrong. Please try again.',
+        onAfterClose: function () {
+            // Clear form inputs on popup close
+            // document.getElementById("name").value = '';
+            document.getElementById("email").value = '';
+            // document.getElementById("subject").value = '';
+            // document.getElementById("message").value = '';
+        }
+    });
+});
+}
