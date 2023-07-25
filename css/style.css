@@ -1559,17 +1559,20 @@ img.identity {
   }
 }
 
+section#about {
+  margin-top: 15%;
+}
+
 @media (max-width: 576px) {
   .modal-dialog {
     max-width: 95%;
+  }
+  section#about {
+    margin-top: 50%;
   }
 }
 
 footer.container.footer {
   width: 100% !important;
-}
-
-section#about {
-  margin-top: 25%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1298,14 +1298,17 @@ img.identity {
     max-width: none;
 }
 }
-
+section#about {
+    margin-top: 15%;
+}
 @media (max-width: 576px){
 .modal-dialog {
     max-width: 95%;
-}}
-footer.container.footer {
-    width: 100% !important;
 }
 section#about {
-    margin-top: 25%;
+    margin-top: 50%;
+}
+}
+footer.container.footer {
+    width: 100% !important;
 }
