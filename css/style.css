@@ -1568,4 +1568,8 @@ img.identity {
 footer.container.footer {
   width: 100% !important;
 }
+
+section#about {
+  margin-top: 25%;
+}
 /*# sourceMappingURL=style.css.map */
