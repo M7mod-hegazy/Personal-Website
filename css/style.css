@@ -326,17 +326,9 @@ nav.navbar {
 
 /* home section styling */
 #home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: url("../images/5.webp") no-repeat center;
-  height: 100vh;
   color: white;
-  background-size: cover;
-  background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
   overflow: hidden;
-  position: relative;
 }
 
 .home .max-width {

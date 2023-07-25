@@ -270,15 +270,12 @@ nav.navbar{
   }
 /* home section styling */
 #home{
-    display: flex;
-    background: url("../images/5.webp") no-repeat center;
-    height: 100vh;
+  
     color: $second-color;
-    background-size: cover;
-    background-attachment: fixed;
+
     font-family: 'Ubuntu', sans-serif;
     overflow: hidden;
-    position: relative;
+    
 }
 .home .max-width{
   width: 100%;

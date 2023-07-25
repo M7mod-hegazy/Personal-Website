@@ -1,11 +1,6 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-        // sticky navbar on scroll script
-        if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
-        }else{
-            $('.navbar').removeClass("sticky");
-        }
+        
         
         // scroll-up button show/hide script
         if(this.scrollY > 200){
@@ -75,6 +70,7 @@ $(document).ready(function(){
 });
 
 
+  
 //Add scroll functionality to know the current scroll value
 const Sections = Array.from(document.getElementsByTagName("section"));
 
